@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core'
   selector: 'lib-four',
   template: `
     <p>
-      second repo lib three change
+      second repo lib three another change
     </p>
   `,
   styles: []
