@@ -136,6 +136,37 @@
           }
         }
       }
+    },
+    "four": {
+      "projectType": "library",
+      "root": "projects/four",
+      "sourceRoot": "projects/four/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/four/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/four/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/four/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/four/src/test.ts",
+            "tsConfig": "projects/four/tsconfig.spec.json",
+            "karmaConfig": "projects/four/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "defaultProject": "second-repo"

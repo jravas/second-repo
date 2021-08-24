@@ -21,6 +21,10 @@
       "dom"
     ],
     "paths": {
+      "four": [
+        "dist/four/four",
+        "dist/four"
+      ],
       "three": [
         "dist/three/three",
         "dist/three"
