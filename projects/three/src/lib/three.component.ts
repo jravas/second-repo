@@ -1,20 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: 'lib-three',
   template: `
     <p>
-      three works!
+      second repo lib three change
     </p>
   `,
-  styles: [
-  ]
+  styles: []
 })
 export class ThreeComponent implements OnInit {
+  constructor () {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit (): void {}
 }
